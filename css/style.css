@@ -5,11 +5,16 @@
 
 .jumbotron {
     position: relative;
-    background: url(../assets/img/jumbotron.jpg);
+    background: url(../assets/img/test.png);
     min-height: 100vh;
     background-size: cover;
     background-position: center;
     padding: 250px 0 200px;
+}
+
+.text-jumbo {
+    float: inline-end;
+    text-align: end;
 }
 
 .navbar {
