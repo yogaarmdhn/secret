@@ -12,7 +12,7 @@ $(document).ready(function(){
 
 // typing animation script
 var typed = new Typed(".typing", {
-    strings: ["Happy Birthday Sweetest Wowen i've ever seen😘."],
+    strings: ["Happy Birthday <b>Sweetest Woman</b> i've ever seen😘."],
     typeSpeed: 100,
     backSpeed: 60,
     loop: true

@@ -5,7 +5,7 @@
 
 .jumbotron {
     position: relative;
-    background: url(../assets/img/jumbotron4.png);
+    background: url(../assets/img/jumbotron1.png);
     min-height: 100vh;
     background-size: cover;
     background-position: center;
@@ -44,13 +44,72 @@ ul li {
     text-decoration: none;
 }
 
+.scroll {
+    position: absolute;
+    top: 90%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.scroll span {
+    display: block;
+    width: 15px;
+    height: 15px;
+    border-bottom: 2px solid #fff;
+    border-right: 2px solid #fff;
+    transform: rotate(45deg);
+    margin: -10px;
+    animation: animate 2s infinite;
+}
+
+.scroll span:nth-child(2) {
+    animation-delay: -0.2s;
+    transform: rotate(45deg) translate(-20px,-20px);
+}
+
+.scroll span:nth-child(3) {
+    animation-delay: -0.4s;
+}
+
+@keyframes animate {
+    0% {
+        opacity: 0;
+        transform: rotate(45deg) translate(-20px,-20px);
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+        transform: rotate(45deg) translate(20px,20px);
+    }
+}
+
 @media screen and (max-width: 600px) {
     .jumbotron {
         position: relative;
-        background: url(../assets/img/jumbotron5.png);
+        background: url(../assets/img/jumbotron2.png);
         min-height: 100vh;
         background-size: cover;
         background-position: center;
         padding: 250px 0 200px;
     }
-  }
+
+    .scroll {
+        position: absolute;
+        top: 80%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+    }
+
+    .scroll span {
+        display: block;
+        width: 15px;
+        height: 15px;
+        border-bottom: 2px solid #fff;
+        border-right: 2px solid #fff;
+        transform: rotate(45deg);
+        margin: -10px;
+        animation: animate 2s infinite;
+    }
+}
